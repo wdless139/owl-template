@@ -1,21 +1,26 @@
-owl-template
-============
+# owl-template
 
-owl-template is a simple python template engine implementation
+### Причем здесь совы?
 
-## why owl
+¯\\_(ツ)_/¯
 
-¯\_(ツ)_/¯
+### Простой пример
 
-## Documentation
+```html
+from template import Template
 
-### Variables
+result = Template('Hello, {{ name }}').render({
+            'name': 'John'
+        })
+```
+
+### Переменные
 
 ```html
 <p>{{ var }}</p>
 ```
 
-### For
+### Циклы
 
 ```html
 {% for i in items %}
@@ -23,9 +28,9 @@ owl-template is a simple python template engine implementation
 {% endfor %}
 ```
 
-### If
+### Условия
 
-if block doesn't support any operators
+На данный момент блок if не поддерживает операторы сравнения
 
 ```html
 {% if var %}
